@@ -1,72 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="Assets/icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
     <title>Calculator</title>
+    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-    <table>
-        <tr></tr>
-        <tr class="input"><td id="default"colspan="9">00</td></tr>
-        <tr class="output"><td id="default" colspan="9">00</td></tr>
-        <tr>
-            <td class="">)</td>
-            <td>mc</td>
-            <td>m+</td>
-            <td>m-</td>
-            <td>mr</td>
-            <td class="num op clr">C</td>
-            <td class="num op del"><img class="delete_img" src="Assets/delete.png"></td>
-            <td class="num op">%</td>
-            <td class="num op">/</td>
-        </tr>
-        <tr>
-            <td>x<sup>2</sup></td>
-            <td>x<sup>3</sup></td>
-            <td>x<sup>y</sup></td>
-            <td>e<sup>x</sup></td>
-            <td>10<sup>x</sup></td>
-            <td class="num num7">7</td>
-            <td class="num num8">8</td>
-            <td class="num num9">9</td>
-            <td class="op">x</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>ln</td>
-            <td>log<sub>10</sub></td>
-            <td class="num num4">4</td>
-            <td class="num num5">5</td>
-            <td class="num num6">6</td>
-            <td class="op">-</td>
-        </tr>
-        <tr>
-            <td>sin</td>
-            <td>cos</td>
-            <td>tan</td>
-            <td>e</td>
-            <td>EE</td>
-            <td class="num num1">1</td>
-            <td class="num num2">2</td>
-            <td class="num num3">3</td>
-            <td class="op">+</td>
-        </tr>
-        <tr>
-            <td>sinh</td>
-            <td>cosh</td>
-            <td>tanh</td>
-            <td>pi</td>
-            <td>Rand</td>
-            <td class="num num0"colspan="2">0</td>
-            <td class="num num.">.</td>
-            <td class="op eq">=</td>
-        </tr>
-    </table>
-    <script src="script.js"></script>
+    <div class="container">
+        <div class="calculator">
+            <form>
+                <div class="display">
+                </div>
+                <div>
+                    <input type="button" value="AC " id="clear">
+                    <input type="button" value="DE " id="delete">
+                    <input type="button" value="%" id="mod">
+                    <input type="button" value="/" id="divide">
+                </div>
+                <div>
+                    <input type="button" value="7" id="num7">
+                    <input type="button" value="8" id="num8">
+                    <input type="button" value="9" id="num9">
+                    <input type="button" value="*" id="multiply">
+                </div>
+                <div>
+                    <input type="button" value="4" id="num4">
+                    <input type="button" value="5" id="num5">
+                    <input type="button" value="6" id="num6">
+                    <input type="button" value="-" id="minus">
+                </div>
+                <div>
+                    <input type="button" value="1" id="num1">
+                    <input type="button" value="2" id="num2">
+                    <input type="button" value="3" id="num3">
+                    <input type="button" value="+" id="sum">
+                </div>
+                <div>
+                    <input type="button" value="0" id="num0">
+                    <input type="button" value="." id="dot">
+                    <input id="eq" type="button" value="=" >
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
 </body>
+
 </html>
