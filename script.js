@@ -72,3 +72,11 @@ function get() {
     equals.addEventListener("click", function () { evaluateExpression()  }); 
 };
 get();
+
+// Addition features 
+button=document.getElementsByTagName("input");
+button.addEventListener("click", vibrate());
+function vibrate() {
+    navigator.vibrate(50)  
+  }
+  
