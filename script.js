@@ -23,6 +23,16 @@ var equals = document.querySelector("#eq");
 let expression = "";
 let previous = "";
 function makenum(digit) {
+  if (
+    expression == "" &&
+    (digit == "-" ||
+      digit == "+" ||
+      digit == "*" ||
+      digit == "/" ||
+      digit == "%")
+  ) {
+    expression = previous;
+  }
   expression += digit;
   give();
 }
